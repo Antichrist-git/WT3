@@ -1,0 +1,32 @@
+# PHP dependencies and JS packages
+/vendor/
+/node_modules/
+
+# Local app settings, secrets and databases
+.env
+.env.*
+!.env.example
+/database/*.sqlite
+/database/*.sqlite-*
+
+# Generated runtime files and caches
+/bootstrap/cache/*.php
+!/bootstrap/cache/.keep
+/public/storage
+/public/hot
+/storage/framework/cache/data/*
+!/storage/framework/cache/data/.keep
+/storage/framework/sessions/*
+!/storage/framework/sessions/.keep
+/storage/framework/views/*
+!/storage/framework/views/.keep
+/storage/logs/*
+!/storage/logs/.keep
+/.phpunit.cache/
+.phpunit.result.cache
+
+# Editor and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

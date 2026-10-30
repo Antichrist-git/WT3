@@ -1,0 +1,22 @@
+/* Небольшие правки для готовой CSS-сборки из архива. */
+.card-art .god-image { display: block; width: 100%; height: 100%; object-fit: cover; }
+.card-art .image-placeholder { width: 100%; height: 100%; }
+#godModal .modal-footer { display: flex; align-items: center; gap: 8px; }
+#godModal .modal-footer form { display: inline-flex; }
+@media (max-width: 575px) {
+    #godModal .modal-navigation { flex-basis: 100%; margin-bottom: 8px; }
+    #godModal .modal-footer { justify-content: flex-end; }
+}
+
+
+/* Пошаговая валидация: сообщения видны сразу после перехода к другому полю. */
+.god-form .is-valid { border-color: #31946e; background-color: #f7fffa; }
+.god-form .is-invalid { border-color: #c04b46; background-color: #fff9f8; }
+.god-form .invalid-feedback { font-size: 12px; margin-top: 7px; line-height: 1.5; }
+.god-form .name-input-warning { margin-top: 7px; color: #9a631f; font-size: 12px; line-height: 1.5; }
+.god-form .field-live-status { margin-top: 7px; font-size: 12px; line-height: 1.5; }
+.god-form .field-live-status[data-state="success"] { color: #277650; }
+.god-form .field-live-status[data-state="error"] { color: #bb3e3e; }
+.god-form .field-live-status[data-state="loading"],
+.god-form .field-live-status[data-state="warning"] { color: #976c2d; }
+.god-form .name-input-warning[hidden], .god-form .field-live-status[hidden] { display: none !important; }
